@@ -1,0 +1,109 @@
+:root {
+  --light-red: hsl(356, 100%, 66%); /* (CTA text) */
+  --very-light-red: hsl(355, 100%, 74%); /*  (CTA hover background) */
+  --very-dark-blue: hsl(208, 49%, 24%); /*  (headings) */
+
+  --white: hsl(0, 0%, 100%); /*  (text) */
+  --grayish-blue: hsl(240, 2%, 79%); /*  (footer text) */
+  --very-dark-grayish-blue: hsl(207, 13%, 34%); /*  (body copy) */
+  --very-dark-black-blue: hsl(240, 10%, 16%); /*  (footer background) */
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1rem;
+
+  font-family: "Ubuntu", sans-serif;
+  font-family: "Overpass", sans-serif;
+}
+
+.container {
+  padding: 0 2rem;
+}
+
+.nav {
+  display: none;
+}
+
+.header {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.top {
+  background-image: url(../images/bg-pattern-intro.svg);
+  background-repeat: no-repeat;
+  background-color: var(--very-light-red);
+  background-blend-mode: soft-light;
+  background-position: 35% 42%;
+  background-size: 1440px;
+
+  text-align: center;
+  padding-bottom: 8rem;
+  border: 1px solid var(--very-light-red);
+  border-radius: 0 0 0 5rem;
+}
+
+/*
+ * Typography
+ */
+.title {
+  font-size: 1.9rem;
+  line-height: 1.5;
+}
+
+.intro__para {
+  font-size: 1.1rem;
+}
+
+/*
+ * Intro
+ */
+
+.intro {
+  color: var(--white);
+}
+
+.intro__title {
+  margin-bottom: 1rem;
+}
+
+.intro-content {
+  margin: 2rem 0;
+}
+
+.intro-buttons {
+  display: flex;
+  justify-content: center;
+  column-gap: 1rem;
+}
+
+/*
+ * Components
+ */
+.button {
+  outline: none;
+  border-radius: 99rem;
+  border: 1px solid var(--white);
+
+  padding: 0.7rem 1.5rem;
+  background-color: var(--white);
+  color: var(--very-light-red);
+  font-weight: bold;
+}
+
+.button--ghost {
+  background-color: var(--very-light-red);
+  color: var(--white);
+}
