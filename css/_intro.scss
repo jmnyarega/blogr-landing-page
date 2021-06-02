@@ -1,0 +1,17 @@
+.intro {
+  color: $white;
+}
+
+.intro__title {
+  margin-bottom: 1rem;
+}
+
+.intro-content {
+  margin: 2rem 0;
+}
+
+.intro-buttons {
+  display: flex;
+  justify-content: center;
+  column-gap: 1rem;
+}

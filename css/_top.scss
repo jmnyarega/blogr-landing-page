@@ -1,0 +1,14 @@
+.top {
+  background-image: url(../images/bg-pattern-intro.svg);
+  background-repeat: no-repeat;
+  background-color: $very-light-red;
+  background-blend-mode: soft-light;
+  background-position: 35% 42%;
+  background-size: 1440px;
+
+  text-align: center;
+  padding-bottom: 8rem;
+  border: 1px solid $very-light-red;
+  border-radius: 0 0 0 5rem;
+}
+

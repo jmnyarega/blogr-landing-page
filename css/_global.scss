@@ -1,0 +1,23 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1rem;
+
+  font-family: "Ubuntu", sans-serif;
+  font-family: "Overpass", sans-serif;
+  position: relative;
+  z-index: -1;
+}
+
+.container {
+  padding: 0 2rem;
+}
