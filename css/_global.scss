@@ -12,12 +12,11 @@ html {
 body {
   font-size: 1rem;
 
-  font-family: "Ubuntu", sans-serif;
-  font-family: "Overpass", sans-serif;
+  font-family: $ubuntu;
   position: relative;
-  z-index: -1;
+  z-index: 2;
 }
 
 .container {
-  padding: 0 2rem;
+  padding: 0 1rem;
 }

@@ -1,17 +1,21 @@
 .phones {
-  padding: 0 0 5rem 0;
-  margin-top: 15rem;
-  text-align: center;
   color: $white;
-  position: relative;
-  overflow: hidden;
-  border-radius: 0 5rem 0.5rem;
-
+  text-align: center;
+  padding-bottom: 5rem;
   background: linear-gradient(
     to right,
     $very-dark-gray-blue,
     $very-dark-desaturated-blue
   );
+
+  margin-top: 20rem;
+  border-radius: 0 5rem 0.5rem;
+  position: relative;
+}
+
+.circles-container {
+  overflow: hidden;
+  position: relative;
 }
 
 .phones__title {
@@ -24,26 +28,27 @@
   margin-top: 1rem;
 }
 
-.phone-content {
-  margin-top: 15rem;
+.phones-content {
+  padding-top: 10rem;
   z-index: 2;
   position: relative;
 }
 
 .circles {
   position: absolute;
-  width: 660px;
-  top: -39%;
+  max-width: 588px;
+  bottom: 167px;
   left: 50%;
+  z-index: 2;
   transform: translateX(-50%);
 }
 
 .phones-illustration {
   position: absolute;
   z-index: 3;
-  top: 46%;
+  bottom: 68%;
   left: 50%;
   transform: translateX(-50%);
-  width: 100%;
+  max-width: 100%;
 }
 

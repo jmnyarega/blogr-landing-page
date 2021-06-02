@@ -6,4 +6,17 @@
   padding-top: 2rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.hamburger {
+  cursor: pointer;
+}
+
+.hamburger > img:first-child {
+  display: block;
+}
+
+.hamburger > img:last-child {
+  display: none;
 }
