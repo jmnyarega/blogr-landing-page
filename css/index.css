@@ -16,14 +16,61 @@ body {
 .container {
   padding: 0 1rem; }
 
-.nav {
-  display: none; }
+.mobile-nav {
+  opacity: 0;
+  margin: 0 1rem;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  background-color: white;
+  box-shadow: 3px 3px 6px 3px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 100px;
+  right: 0;
+  left: 0;
+  transition: all 1s; }
+  .mobile-nav__items {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .mobile-nav__item + .mobile-nav__item, .mobile-nav__item + .divider {
+    margin-top: 1.5rem; }
+  .mobile-nav__link {
+    text-decoration: none;
+    color: #1f3f5b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.5rem; }
+  .mobile-nav__link:not(.button):not(.button--ghost):not(.login):not(.link-dropdown)::after {
+    content: "";
+    background-image: url(../images/icon-arrow-dark.svg);
+    width: 10px;
+    height: 6px;
+    background-repeat: no-repeat; }
+  .mobile-nav__button {
+    margin: 1rem auto;
+    width: max-content;
+    display: block;
+    text-decoration: none;
+    background: linear-gradient(to right, #ff7a85, #ff525d);
+    color: white; }
+  .mobile-nav__dropdown {
+    margin: 1rem 0;
+    padding: 1rem 0;
+    background-color: rgba(200, 200, 203, 0.3);
+    border-radius: 0.5rem; }
+    .mobile-nav__dropdown-item + .mobile-nav__dropdown-item {
+      margin-top: 1rem; }
 
 .header {
   padding-top: 2rem;
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  position: relative; }
+
+.divider {
+  border-top: 1px solid rgba(200, 200, 203, 0.3);
+  margin-bottom: 2rem; }
 
 .hamburger {
   cursor: pointer; }
@@ -44,6 +91,10 @@ body {
 .intro {
   color: white;
   margin-top: 5rem; }
+  .intro__button {
+    border: 1px solid white;
+    background-color: white;
+    color: #ff7a85; }
 
 .intro__title {
   margin-bottom: 1rem; }
@@ -181,14 +232,11 @@ body {
 .footer h4 {
   margin-bottom: 1.5rem; }
 
-.button {
+.button, .button--ghost {
   outline: none;
   border-radius: 99rem;
-  border: 1px solid white;
   cursor: pointer;
   padding: 0.7rem 1.5rem;
-  background-color: white;
-  color: #ff7a85;
   font-weight: bold; }
 
 .button--ghost {
@@ -196,9 +244,11 @@ body {
   color: white;
   background-size: contain; }
 
-.button:hover,
+.button:hover, .button--ghost:hover,
 .button:focus-visible,
-.button:focus {
+.button--ghost:focus-visible,
+.button:focus,
+.button--ghost:focus {
   box-shadow: 3px 3px 6px 3px rgba(0, 0, 0, 0.3); }
 
 .top {

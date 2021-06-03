@@ -1,4 +1,5 @@
 const ham = document.getElementById("hamburger");
+const nav = document.getElementsByClassName("mobile-nav")[0];
 
 const selectHam = () => {
   const classes = Array.from(ham.classList);
@@ -12,6 +13,7 @@ const selectHam = () => {
     ham.classList.add("hamburger-open");
     open_img.style.display = "block";
     close_img.style.display = "none";
+    nav.style.opacity = 0;
   }
 
   if (open) {
@@ -19,5 +21,6 @@ const selectHam = () => {
     ham.classList.add("hamburger-closed");
     open_img.style.display = "none";
     close_img.style.display = "block";
+    nav.style.opacity = 1;
   }
 };

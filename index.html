@@ -34,17 +34,36 @@
           <img src="./images/icon-hamburger.svg" alt="ham-open" />
           <img src="./images/icon-close.svg" alt="ham-close" />
         </div>
-        <nav class="nav">
-          <ul class="nav-items">
-            <li class="nav-item">
-              <a class="nav-link" href=""> Link 1 </a>
+        <nav class="mobile-nav">
+          <ul class="mobile-nav__items">
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link" href=""> Product </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href=""> Link 2 </a>
+
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link" href="">Company</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href=""> Link 3 </a>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link" href="">Connect</a>
+              <ul class="mobile-nav__items mobile-nav__dropdown">
+                <li class="mobile-nav__dropdown-item">
+                  <a href="" class="mobile-nav__link link-dropdown">Contact</a>
+                </li>
+                <li class="mobile-nav__dropdown-item">
+                  <a href="" class="mobile-nav__link link-dropdown"
+                    >Newsletter</a
+                  >
+                </li>
+                <li class="mobile-nav__dropdown-item">
+                  <a href="" class="mobile-nav__link link-dropdown">LinkedIn</a>
+                </li>
+              </ul>
             </li>
+            <div class="divider"></div>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link login" href="">Login</a>
+            </li>
+            <a href="#" class="mobile-nav__button button">Sign Up</a>
           </ul>
         </nav>
       </header>
@@ -56,8 +75,8 @@
           </p>
         </div>
         <div class="intro-buttons">
-          <button class="button">Start for Free</button>
-          <button class="button button--ghost">Learn More</button>
+          <button class="intro__button button">Start for Free</button>
+          <button class="intro__button button--ghost">Learn More</button>
         </div>
       </div>
     </section>

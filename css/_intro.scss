@@ -1,6 +1,12 @@
 .intro {
   color: $white;
   margin-top: 5rem;
+
+  &__button {
+    border: 1px solid $white;
+    background-color: $white;
+    color: $very-light-red;
+  }
 }
 
 .intro__title {
