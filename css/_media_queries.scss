@@ -15,23 +15,27 @@
     background-position: 15% 55%;
   }
 
-  .future {
+  .middle-section {
     display: flex;
     justify-content: center;
     align-items: center;
     column-gap: 1rem;
-
-    max-width: 1440px;
-    width: 80%;
-    margin: 3rem  auto;
+    flex-direction: row-reverse;
   }
 
-  .future section:first-child {
-    width: 48%;
+  .future-design {
+    width: 34%;
+    text-align: initial;
   }
 
-  .future section:last-child {
-    width: 48%;
+  .future-design__title {
+    margin-left: -8rem;
+    margin-bottom: -2rem;
+  }
+
+  .editor-intro__title, .robust-content__title {
+    font-size: 1.3rem;
+    font-weight: 500;
   }
 
   .future-design__bg {
@@ -43,6 +47,63 @@
 
   .editor-intro, .robust-content {
     text-align: initial;
+  }
+
+  .editor-intro__para, .robust-content__para {
+    font-size: 1rem;
+    color: $very-dark-desaturated-blue;;
+    max-width: 57ch;
+  }
+
+  .circles {
+    max-width: 832px;
+    bottom: -88px;
+    left: 242px;
+  }
+
+  .circles-container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .phones-content {
+    max-width: 75ch;
+  }
+
+  .phones {
+    text-align: initial;
+    margin-top: 5rem;
+  }
+
+  .phones-illustration {
+    bottom: -89px;
+    left: 9px;
+    transform: initial;
+  }
+
+  .bottom-section {
+    display: flex;
+    column-gap: 5rem;
+    align-items: center;
+    text-align: initial;
+  }
+
+  .fos__bg {
+    background: no-repeat url(../images/illustration-laptop-desktop.svg);
+    height: 786px;
+
+	width: 250%;
+	margin-left: -18.5rem;
+  }
+
+
+  .pt {
+    text-align: initial;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-evenly;
   }
 
 }

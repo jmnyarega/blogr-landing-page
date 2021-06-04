@@ -14,6 +14,7 @@ const selectHam = () => {
     open_img.style.display = "block";
     close_img.style.display = "none";
     nav.style.opacity = 0;
+    nav.style.zIndex = -1;
   }
 
   if (open) {
@@ -22,5 +23,6 @@ const selectHam = () => {
     open_img.style.display = "none";
     close_img.style.display = "block";
     nav.style.opacity = 1;
+    nav.style.zIndex = 5;
   }
 };
