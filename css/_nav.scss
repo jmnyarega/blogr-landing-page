@@ -67,12 +67,15 @@
 }
 
 .header {
-  padding-top: 2rem;
-
   display: flex;
   justify-content: space-between;
-
+  align-items: center;
+  column-gap: 2rem;
   position: relative;
+}
+
+.nav-buttons, .nav  {
+  display: none;
 }
 
 .divider {

@@ -3,11 +3,22 @@
     max-width: 1440px;
     width: 80%;
     margin: 0 auto;
+    justify-content: initial;
+  }
+
+  .nav-buttons {
+    display: flex;
+    column-gap: 1rem;
+    margin-left: auto;
   }
 
   .intro__title {
     font-size: 3rem;
     font-weight: normal;
+  }
+
+  .mobile-nav, .hamburger {
+    display: none;
   }
 
   .top {
@@ -104,6 +115,48 @@
   .footer {
     display: flex;
     justify-content: space-evenly;
+  }
+
+  .nav {
+    display: block;
+    &__items {
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+      align-content: space-between;
+      column-gap: 1rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    &__link {
+      text-decoration: none;
+      color: $white;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 0.5rem;
+    }
+    &__dropdown {
+      display: none;
+      margin: 1rem 0;
+      padding: 1rem 0;
+      background-color: $light-grayish-blue;
+      border-radius: 0.5rem;
+
+      &-item + &-item {
+	margin-top: 1rem;
+      }
+    }
+    &__button {
+      margin: 1rem auto;
+      width: max-content;
+      display: block;
+      text-decoration: none;
+      background-color: $white;
+      color: $light-red;
+    }
   }
 
 }
