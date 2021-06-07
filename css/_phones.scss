@@ -15,7 +15,7 @@
 
 .circles-container {
   overflow: hidden;
-  position: relative;
+  // position: relative;
 }
 
 .phones__title {
@@ -29,18 +29,18 @@
 }
 
 .phones-content {
-  padding-top: 10rem;
-  z-index: 2;
-  position: relative;
+  // padding-top: 10rem;
+  // z-index: 2;
+  // position: relative;
 }
 
 .circles {
-  position: absolute;
-  max-width: 588px;
-  bottom: 167px;
-  left: 50%;
+  // position: absolute;
+  // max-width: 588px;
+  // bottom: 167px;
+  // left: 50%;
   z-index: 2;
-  transform: translateX(-50%);
+  transform: translateX(-19%);
 }
 
 .phones-illustration {

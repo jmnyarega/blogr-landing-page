@@ -19,6 +19,10 @@
   opacity: 0.5;
 }
 
+.footer ul li + li {
+  margin-top: 0.5rem;
+}
+
 .footer__product,
 .footer__company,
 .footer__connect {

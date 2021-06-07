@@ -16,6 +16,9 @@ body {
 .container {
   padding: 0 1rem; }
 
+.hide-mobile {
+  display: none; }
+
 .mobile-nav {
   opacity: 0;
   z-index: -1;
@@ -114,6 +117,7 @@ body {
   font-family: "Overpass", sans-serif; }
 
 .future-design {
+  margin-left: auto;
   margin-top: 3rem;
   text-align: center; }
 
@@ -155,8 +159,7 @@ body {
   position: relative; }
 
 .circles-container {
-  overflow: hidden;
-  position: relative; }
+  overflow: hidden; }
 
 .phones__title {
   font-size: 2.5rem; }
@@ -166,18 +169,9 @@ body {
   font-size: 1.2rem;
   margin-top: 1rem; }
 
-.phones-content {
-  padding-top: 10rem;
-  z-index: 2;
-  position: relative; }
-
 .circles {
-  position: absolute;
-  max-width: 588px;
-  bottom: 167px;
-  left: 50%;
   z-index: 2;
-  transform: translateX(-50%); }
+  transform: translateX(-19%); }
 
 .phones-illustration {
   position: absolute;
@@ -229,6 +223,9 @@ body {
   padding: 0;
   opacity: 0.5; }
 
+.footer ul li + li {
+  margin-top: 0.5rem; }
+
 .footer__product,
 .footer__company,
 .footer__connect {
@@ -268,12 +265,14 @@ body {
   border: 1px solid #ff7a85;
   border-radius: 0 0 0 5rem; }
 
-@media (min-width: 400px) {
+@media (min-width: 500px) {
   .header {
     max-width: 1440px;
     width: 80%;
     margin: 0 auto;
     justify-content: initial; }
+  .hide-mobile {
+    display: none; }
   .nav-buttons {
     display: flex;
     column-gap: 1rem;
@@ -290,10 +289,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 1rem;
-    flex-direction: row-reverse; }
+    flex-direction: row-reverse;
+    width: 90%;
+    margin: 0 auto; }
   .future-design {
-    width: 34%;
+    width: 50%;
     text-align: initial; }
   .future-design__title {
     margin-left: -8rem;
@@ -303,8 +303,8 @@ body {
     font-weight: 500; }
   .future-design__bg {
     background: no-repeat url(../images/illustration-editor-desktop.svg);
-    height: 600px;
-    max-width: 88%;
+    height: 784px;
+    max-width: 100%;
     background-size: cover; }
   .editor-intro, .robust-content {
     text-align: initial; }
@@ -313,31 +313,36 @@ body {
     color: #3f4164;
     max-width: 57ch; }
   .circles {
-    max-width: 832px;
-    bottom: -88px;
-    left: 242px; }
+    margin-top: -42rem; }
   .circles-container {
-    display: flex;
-    flex-direction: row-reverse; }
+    display: flex; }
+  .circle-img {
+    width: 50%; }
   .phones-content {
-    max-width: 75ch; }
+    max-width: 75ch;
+    align-self: center;
+    z-index: 3; }
   .phones {
     text-align: initial;
     margin-top: 5rem; }
   .phones-illustration {
     bottom: -89px;
-    left: 9px;
+    left: 95px;
     transform: initial; }
   .bottom-section {
     display: flex;
-    column-gap: 5rem;
     align-items: center;
-    text-align: initial; }
+    justify-content: space-between;
+    text-align: initial;
+    width: 90%;
+    margin: 5rem auto 0 auto; }
+  .bottom-section > div {
+    max-width: 75ch; }
   .fos__bg {
     background: no-repeat url(../images/illustration-laptop-desktop.svg);
-    height: 786px;
-    width: 250%;
-    margin-left: -18.5rem; }
+    height: 784px;
+    width: 100%;
+    background-size: cover; }
   .pt {
     text-align: initial; }
   .footer {
